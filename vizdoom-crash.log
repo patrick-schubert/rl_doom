@@ -1,0 +1,815 @@
+*** Fatal Error ***
+Address not mapped to object (signal 11)
+Address: 0x7f8a3a8b1e00
+
+System: Linux cepes 4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+
+Executing: gdb --quiet --batch --command=gdb-respfile-8xWHw0
+[New LWP 3507]
+[New LWP 3526]
+[New LWP 3527]
+[New LWP 3528]
+[New LWP 3529]
+[New LWP 3530]
+[New LWP 3531]
+[New LWP 3532]
+[New LWP 3533]
+[New LWP 3534]
+[New LWP 3535]
+[New LWP 3536]
+[New LWP 3537]
+[New LWP 3538]
+[New LWP 3539]
+[New LWP 3540]
+[New LWP 3541]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007f8a4dd0223a in __waitpid (pid=3542, stat_loc=0x563f09aedf6c, options=0) at ../sysdeps/unix/sysv/linux/waitpid.c:30
+
+* Loaded Libraries
+From                To                  Syms Read   Shared Object Library
+0x00007f8a4e822130  0x00007f8a4ea7882e  Yes (*)     /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0
+0x00007f8a4e56b0b0  0x00007f8a4e59ce6e  Yes (*)     /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+0x00007f8a4e263040  0x00007f8a4e2dd1de  Yes (*)     /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0
+0x00007f8a4df2dff0  0x00007f8a4dff4229  Yes (*)     /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+0x00007f8a4dcf5bb0  0x00007f8a4dd040f1  Yes         /lib/x86_64-linux-gnu/libpthread.so.0
+0x00007f8a4daea200  0x00007f8a4daed70c  Yes         /lib/x86_64-linux-gnu/librt.so.1
+0x00007f8a4d8c9f90  0x00007f8a4d8dd640  Yes (*)     /lib/x86_64-linux-gnu/libz.so.1
+0x00007f8a4d663e10  0x00007f8a4d69d7a0  Yes (*)     /usr/lib/x86_64-linux-gnu/libjpeg.so.8
+0x00007f8a4d451320  0x00007f8a4d45d3c2  Yes (*)     /lib/x86_64-linux-gnu/libbz2.so.1.0
+0x00007f8a4d238360  0x00007f8a4d245368  Yes (*)     /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.65.1
+0x00007f8a4d021830  0x00007f8a4d022911  Yes (*)     /usr/lib/x86_64-linux-gnu/libboost_system.so.1.65.1
+0x00007f8a4ce18e50  0x00007f8a4ce19bde  Yes         /lib/x86_64-linux-gnu/libdl.so.2
+0x00007f8a4cb14490  0x00007f8a4cbc3b4e  Yes (*)     /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+0x00007f8a4c6f3a80  0x00007f8a4c7b22f5  Yes         /lib/x86_64-linux-gnu/libm.so.6
+0x00007f8a4c4d2ac0  0x00007f8a4c4e33fd  Yes (*)     /lib/x86_64-linux-gnu/libgcc_s.so.1
+0x00007f8a4c0f92d0  0x00007f8a4c271c3c  Yes         /lib/x86_64-linux-gnu/libc.so.6
+0x00007f8a4be3d860  0x00007f8a4be94c42  Yes (*)     /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0
+0x00007f8a4bc19110  0x00007f8a4bc1a006  Yes (*)     /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0
+0x00007f8a4ba0c8e0  0x00007f8a4ba1190e  Yes (*)     /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+0x00007f8a4b6e87c0  0x00007f8a4b76f678  Yes (*)     /usr/lib/x86_64-linux-gnu/libX11.so.6
+0x00007f8a4b4c9540  0x00007f8a4b4cb876  Yes (*)     /usr/lib/x86_64-linux-gnu/libXfixes.so.3
+0x00007f8a4b2aa210  0x00007f8a4b2b729f  Yes (*)     /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0
+0x00007f8a4af92280  0x00007f8a4b05ca76  Yes (*)     /usr/lib/x86_64-linux-gnu/libcairo.so.2
+0x00007f8a4ad5e2b0  0x00007f8a4ad722d4  Yes (*)     /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+0x00007f8a4a9f0180  0x00007f8a4aad2ed2  Yes (*)     /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+0x00007f8a4a7a7130  0x00007f8a4a7af6fd  Yes (*)     /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0
+0x00007f8a4a55cb30  0x00007f8a4a57d916  Yes (*)     /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+0x00007f8a4a30ee00  0x00007f8a4a32ea8a  Yes (*)     /usr/lib/x86_64-linux-gnu/libfontconfig.so.1
+0x00007f8a4a101740  0x00007f8a4a10600a  Yes (*)     /usr/lib/x86_64-linux-gnu/libffi.so.6
+0x00007f8a49e89520  0x00007f8a49eda4cd  Yes (*)     /lib/x86_64-linux-gnu/libpcre.so.3
+0x00007f8a49baae50  0x00007f8a49c410bf  Yes (*)     /usr/lib/x86_64-linux-gnu/libasound.so.2
+0x00007f8a4993bb10  0x00007f8a49968672  Yes (*)     /usr/lib/x86_64-linux-gnu/libpulse.so.0
+0x00007f8a49722bc0  0x00007f8a49729317  Yes (*)     /usr/lib/x86_64-linux-gnu/libsndio.so.6.1
+0x00007f8a4950b590  0x00007f8a4951539f  Yes (*)     /usr/lib/x86_64-linux-gnu/libXext.so.6
+0x00007f8a492fa320  0x00007f8a492fed40  Yes (*)     /usr/lib/x86_64-linux-gnu/libXcursor.so.1
+0x00007f8a490f0af0  0x00007f8a490f13ec  Yes (*)     /usr/lib/x86_64-linux-gnu/libXinerama.so.1
+0x00007f8a48ee2180  0x00007f8a48eec9d7  Yes (*)     /usr/lib/x86_64-linux-gnu/libXi.so.6
+0x00007f8a48cd1c00  0x00007f8a48cd7cf5  Yes (*)     /usr/lib/x86_64-linux-gnu/libXrandr.so.2
+0x00007f8a48ac8cd0  0x00007f8a48ac9a8c  Yes (*)     /usr/lib/x86_64-linux-gnu/libXss.so.1
+0x00007f8a488c0fc0  0x00007f8a488c38c8  Yes (*)     /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1
+0x00007f8a486b8640  0x00007f8a486b87d6  Yes (*)     /usr/lib/x86_64-linux-gnu/libwayland-egl.so.1
+0x00007f8a484acff0  0x00007f8a484b1def  Yes (*)     /usr/lib/x86_64-linux-gnu/libwayland-client.so.0
+0x00007f8a482a1190  0x00007f8a482a2caf  Yes (*)     /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0
+0x00007f8a48064010  0x00007f8a4807eb7a  Yes (*)     /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0
+0x00007f8a4ee00f10  0x00007f8a4ee1fb20  Yes         /lib64/ld-linux-x86-64.so.2
+0x00007f8a47e51a60  0x00007f8a47e57ab5  Yes (*)     /usr/lib/x86_64-linux-gnu/libXrender.so.1
+0x00007f8a47c48c40  0x00007f8a47c49665  Yes (*)     /usr/lib/x86_64-linux-gnu/libXcomposite.so.1
+0x00007f8a47a40b60  0x00007f8a47a4144b  Yes (*)     /usr/lib/x86_64-linux-gnu/libXdamage.so.1
+0x00007f8a477937f0  0x00007f8a4780c2e4  Yes (*)     /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+0x00007f8a4756b150  0x00007f8a4757d535  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb.so.1
+0x00007f8a472c1b50  0x00007f8a47344dc0  Yes (*)     /usr/lib/x86_64-linux-gnu/libpixman-1.so.0
+0x00007f8a470844e0  0x00007f8a470a62b8  Yes (*)     /usr/lib/x86_64-linux-gnu/libpng16.so.16
+0x00007f8a46e78d50  0x00007f8a46e79843  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0
+0x00007f8a46c6ccb0  0x00007f8a46c716e8  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-render.so.0
+0x00007f8a46a46210  0x00007f8a46a5d4cf  Yes (*)     /lib/x86_64-linux-gnu/libselinux.so.1
+0x00007f8a46823830  0x00007f8a46833152  Yes         /lib/x86_64-linux-gnu/libresolv.so.2
+0x00007f8a465d2b30  0x00007f8a46607b5e  Yes (*)     /lib/x86_64-linux-gnu/libmount.so.1
+0x00007f8a4632f0c0  0x00007f8a4638c6ae  Yes (*)     /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0
+0x00007f8a46119c20  0x00007f8a4611d683  Yes (*)     /usr/lib/x86_64-linux-gnu/libthai.so.0
+0x00007f8a45ee3840  0x00007f8a45f00093  Yes (*)     /lib/x86_64-linux-gnu/libexpat.so.1
+0x00007f8a45c71f00  0x00007f8a45cb6afe  Yes (*)     /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-11.1.so
+0x00007f8a45a1b1e0  0x00007f8a45a46b11  Yes (*)     /lib/x86_64-linux-gnu/libdbus-1.so.3
+0x00007f8a457fb450  0x00007f8a4580834f  Yes (*)     /lib/x86_64-linux-gnu/libbsd.so.0
+0x00007f8a455f0e50  0x00007f8a455f1acc  Yes (*)     /usr/lib/x86_64-linux-gnu/libXau.so.6
+0x00007f8a453e9110  0x00007f8a453eaa18  Yes (*)     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6
+0x00007f8a451a1830  0x00007f8a451d002e  Yes (*)     /lib/x86_64-linux-gnu/libblkid.so.1
+0x00007f8a44f6a480  0x00007f8a44f8daf5  Yes (*)     /usr/lib/x86_64-linux-gnu/libgraphite2.so.3
+0x00007f8a44d610c0  0x00007f8a44d64420  Yes (*)     /usr/lib/x86_64-linux-gnu/libdatrie.so.1
+0x00007f8a44ae5380  0x00007f8a44b3be64  Yes (*)     /lib/x86_64-linux-gnu/libsystemd.so.0
+0x00007f8a448cacd0  0x00007f8a448ce867  Yes (*)     /lib/x86_64-linux-gnu/libwrap.so.0
+0x00007f8a4464e750  0x00007f8a4469f435  Yes (*)     /usr/lib/x86_64-linux-gnu/libsndfile.so.1
+0x00007f8a444411d0  0x00007f8a44443848  Yes (*)     /usr/lib/x86_64-linux-gnu/libasyncns.so.0
+0x00007f8a44239640  0x00007f8a4423cf19  Yes (*)     /lib/x86_64-linux-gnu/libuuid.so.1
+0x00007f8a440128e0  0x00007f8a440293e2  Yes (*)     /lib/x86_64-linux-gnu/liblzma.so.5
+0x00007f8a43df1da0  0x00007f8a43e09386  Yes (*)     /usr/lib/x86_64-linux-gnu/liblz4.so.1
+0x00007f8a43adbc00  0x00007f8a43ba7b38  Yes (*)     /lib/x86_64-linux-gnu/libgcrypt.so.20
+0x00007f8a438b4090  0x00007f8a438c1807  Yes         /lib/x86_64-linux-gnu/libnsl.so.1
+0x00007f8a43640170  0x00007f8a436a32db  Yes (*)     /usr/lib/x86_64-linux-gnu/libFLAC.so.8
+0x00007f8a43429a70  0x00007f8a4342dc05  Yes (*)     /usr/lib/x86_64-linux-gnu/libogg.so.0
+0x00007f8a431face0  0x00007f8a43210a82  Yes (*)     /usr/lib/x86_64-linux-gnu/libvorbis.so.0
+0x00007f8a42f5ba00  0x00007f8a42f5e12c  Yes (*)     /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2
+0x00007f8a42d32be0  0x00007f8a42d3cd48  Yes (*)     /lib/x86_64-linux-gnu/libgpg-error.so.0
+0x00007f8a4214a350  0x00007f8a42150d7f  Yes         /lib/x86_64-linux-gnu/libnss_files.so.2
+0x00007f8a41f0d620  0x00007f8a41f39326  Yes (*)     /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+0x00007f8a41ceb8c0  0x00007f8a41cfd9e3  Yes (*)     /lib/x86_64-linux-gnu/libudev.so.1
+0x00007f8a41253060  0x00007f8a412a09a8  Yes (*)     /usr/lib/x86_64-linux-gnu/libopenal.so
+0x00007f8a4100b440  0x00007f8a4102f2f3  Yes (*)     /usr/lib/x86_64-linux-gnu/libjack.so.0
+0x00007f8a405383d0  0x00007f8a4053b70f  Yes (*)     /usr/lib/x86_64-linux-gnu/libGL.so.1
+0x00007f8a402c2fb0  0x00007f8a402ccb45  Yes (*)     /usr/lib/x86_64-linux-gnu/libGLX.so.0
+0x00007f8a40046b60  0x00007f8a400499e7  Yes (*)     /usr/lib/x86_64-linux-gnu/libGLdispatch.so.0
+0x00007f8a3bda0d00  0x00007f8a3bde124e  Yes (*)     /usr/lib/x86_64-linux-gnu/libGLX_indirect.so.0
+0x00007f8a3bb814f0  0x00007f8a3bb82303  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0
+0x00007f8a3b978d30  0x00007f8a3b9795b6  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-present.so.0
+0x00007f8a3b7720e0  0x00007f8a3b774192  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1
+0x00007f8a3b568960  0x00007f8a3b568c2c  Yes (*)     /usr/lib/x86_64-linux-gnu/libxshmfence.so.1
+0x00007f8a3b33a9c0  0x00007f8a3b3463f4  Yes (*)     /usr/lib/x86_64-linux-gnu/libglapi.so.0
+0x00007f8a3b1284e0  0x00007f8a3b1285db  Yes (*)     /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1
+0x00007f8a3af12e40  0x00007f8a3af1b285  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-glx.so.0
+0x00007f8a3ad01820  0x00007f8a3ad029a5  Yes (*)     /usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0
+0x00007f8a3aaebb00  0x00007f8a3aaf4580  Yes (*)     /usr/lib/x86_64-linux-gnu/libdrm.so.2
+0x00007f8a35dc0a10  0x00007f8a37d12cff  Yes (*)     /usr/lib/x86_64-linux-gnu/libLLVM-6.0.so.1
+0x00007f8a354e81b0  0x00007f8a35502600  Yes (*)     /usr/lib/x86_64-linux-gnu/libedit.so.2
+0x00007f8a352bc990  0x00007f8a352c8a18  Yes (*)     /lib/x86_64-linux-gnu/libtinfo.so.5
+0x00007f8a3444fe20  0x00007f8a34bf9a3e  Yes (*)     /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+0x00007f8a39bca470  0x00007f8a39bd0e24  Yes (*)     /usr/lib/x86_64-linux-gnu/libsensors.so.4
+0x00007f8a399c16a0  0x00007f8a399c558d  Yes (*)     /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2
+0x00007f8a397b1670  0x00007f8a397b8fc2  Yes (*)     /usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1
+0x00007f8a395a2460  0x00007f8a395a661d  Yes (*)     /usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1
+0x00007f8a39382e00  0x00007f8a39394b21  Yes (*)     /usr/lib/x86_64-linux-gnu/libelf.so.1
+(*): Shared library is missing debugging information.
+
+* Threads
+  Id   Target Id         Frame 
+* 1    Thread 0x7f8a4efe3ac0 (LWP 3506) "vizdoom" 0x00007f8a4dd0223a in __waitpid (pid=3542, stat_loc=0x563f09aedf6c, options=0) at ../sysdeps/unix/sysv/linux/waitpid.c:30
+  2    Thread 0x7f8a41ce7700 (LWP 3507) "SDLTimer" 0x00007f8a4dd006d6 in futex_abstimed_wait_cancelable (private=0, abstime=0x0, expected=0, futex_word=0x563f0b607130) at ../sysdeps/unix/sysv/linux/futex-internal.h:205
+  3    Thread 0x7f8a21aa8700 (LWP 3526) "llvmpipe-0" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba80ff0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  4    Thread 0x7f8a222a9700 (LWP 3527) "llvmpipe-1" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81158) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  5    Thread 0x7f8a22aaa700 (LWP 3528) "llvmpipe-2" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba812c0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  6    Thread 0x7f8a232ab700 (LWP 3529) "llvmpipe-3" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81428) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  7    Thread 0x7f8a343d7700 (LWP 3530) "llvmpipe-4" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81590) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  8    Thread 0x7f8a33bd6700 (LWP 3531) "llvmpipe-5" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba816f8) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  9    Thread 0x7f8a333d5700 (LWP 3532) "llvmpipe-6" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81860) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  10   Thread 0x7f8a32bd4700 (LWP 3533) "llvmpipe-7" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba819c8) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  11   Thread 0x7f8a323d3700 (LWP 3534) "llvmpipe-8" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81b30) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  12   Thread 0x7f8a31bd2700 (LWP 3535) "llvmpipe-9" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81c98) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  13   Thread 0x7f8a313d1700 (LWP 3536) "llvmpipe-10" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81e00) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  14   Thread 0x7f8a30bd0700 (LWP 3537) "llvmpipe-11" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81f68) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  15   Thread 0x7f8a23fff700 (LWP 3538) "llvmpipe-12" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba820d0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  16   Thread 0x7f8a212a7700 (LWP 3539) "llvmpipe-13" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba82238) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  17   Thread 0x7f8a20aa6700 (LWP 3540) "llvmpipe-14" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba823a0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  18   Thread 0x7f8a0bfff700 (LWP 3541) "llvmpipe-15" 0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba82508) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+
+* FPU Status
+  R7: Empty   0x00000000000000000000
+  R6: Empty   0x00000000000000000000
+  R5: Empty   0x00000000000000000000
+  R4: Empty   0x00000000000000000000
+  R3: Empty   0x00000000000000000000
+  R2: Empty   0x00000000000000000000
+  R1: Empty   0x00000000000000000000
+=>R0: Empty   0x00000000000000000000
+
+Status Word:         0x0000                                            
+                       TOP: 0
+Control Word:        0x037f   IM DM ZM OM UM PM
+                       PC: Extended Precision (64-bits)
+                       RC: Round to nearest
+Tag Word:            0xffff
+Instruction Pointer: 0x00:0x00000000
+Operand Pointer:     0x00:0x00000000
+Opcode:              0x0000
+
+* Registers
+rax            0xfffffffffffffe00	-512
+rbx            0xdd6	3542
+rcx            0x7f8a4dd0223a	140231987700282
+rdx            0x0	0
+rsi            0x563f09aedf6c	94828745383788
+rdi            0xdd6	3542
+rbp            0x563f09aedf6c	0x563f09aedf6c
+rsp            0x563f09aedf30	0x563f09aedf30
+r8             0x0	0
+r9             0x0	0
+r10            0x0	0
+r11            0x246	582
+r12            0x0	0
+r13            0x1090	4240
+r14            0x563f09aeb460	94828745372768
+r15            0xc	12
+rip            0x7f8a4dd0223a	0x7f8a4dd0223a <__waitpid+74>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+* Backtrace
+
+Thread 18 (Thread 0x7f8a0bfff700 (LWP 3541)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba82508) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a0bffeaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba824e0, mutex = 0x563f0ba824b8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba824b8, cond=0x563f0ba824e0) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a0bffeaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba824e0, mutex = 0x563f0ba824b8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba824e0, mutex=0x563f0ba824b8) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a0bfff700) at pthread_create.c:463
+        pd = 0x7f8a0bfff700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140230883538688, 6463725621038721813, 140230883535936, 0, 94828778511968, 140720405810864, -6437944271716046059, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 17 (Thread 0x7f8a20aa6700 (LWP 3540)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba823a0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a20aa5aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba82378, mutex = 0x563f0ba82350, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba82350, cond=0x563f0ba82378) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a20aa5aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba82378, mutex = 0x563f0ba82350, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba82378, mutex=0x563f0ba82350) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a20aa6700) at pthread_create.c:463
+        pd = 0x7f8a20aa6700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231230252800, 6463725621038721813, 140231230250048, 0, 94828778511392, 140720405810864, -6438030494795125995, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 16 (Thread 0x7f8a212a7700 (LWP 3539)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba82238) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a212a6aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba82210, mutex = 0x563f0ba821e8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba821e8, cond=0x563f0ba82210) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a212a6aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba82210, mutex = 0x563f0ba821e8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba82210, mutex=0x563f0ba821e8) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a212a7700) at pthread_create.c:463
+        pd = 0x7f8a212a7700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231238645504, 6463725621038721813, 140231238642752, 0, 94828778510816, 140720405810864, -6438029393672885483, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 15 (Thread 0x7f8a23fff700 (LWP 3538)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba820d0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a23ffeaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba820a8, mutex = 0x563f0ba82080, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba82080, cond=0x563f0ba820a8) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a23ffeaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba820a8, mutex = 0x563f0ba82080, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba820a8, mutex=0x563f0ba82080) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a23fff700) at pthread_create.c:463
+        pd = 0x7f8a23fff700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231286191872, 6463725621038721813, 140231286189120, 0, 94828778510240, 140720405810864, -6438032232646268139, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 14 (Thread 0x7f8a30bd0700 (LWP 3537)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81f68) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a30bcfaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81f40, mutex = 0x563f0ba81f18, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81f18, cond=0x563f0ba81f40) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a30bcfaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81f40, mutex = 0x563f0ba81f18, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81f40, mutex=0x563f0ba81f18) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a30bd0700) at pthread_create.c:463
+        pd = 0x7f8a30bd0700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231499908864, 6463725621038721813, 140231499906112, 0, 94828778509664, 140720405810864, -6437995390953673963, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 13 (Thread 0x7f8a313d1700 (LWP 3536)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81e00) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a313d0aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81dd8, mutex = 0x563f0ba81db0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81db0, cond=0x563f0ba81dd8) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a313d0aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81dd8, mutex = 0x563f0ba81db0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81dd8, mutex=0x563f0ba81db0) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a313d1700) at pthread_create.c:463
+        pd = 0x7f8a313d1700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231508301568, 6463725621038721813, 140231508298816, 0, 94828778509088, 140720405810864, -6437994285536466155, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 12 (Thread 0x7f8a31bd2700 (LWP 3535)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81c98) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a31bd1aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81c70, mutex = 0x563f0ba81c48, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81c48, cond=0x563f0ba81c70) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a31bd1aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81c70, mutex = 0x563f0ba81c48, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81c70, mutex=0x563f0ba81c48) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a31bd2700) at pthread_create.c:463
+        pd = 0x7f8a31bd2700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231516694272, 6463725621038721813, 140231516691520, 0, 94828778508512, 140720405810864, -6437993186561709291, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 11 (Thread 0x7f8a323d3700 (LWP 3534)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81b30) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a323d2aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81b08, mutex = 0x563f0ba81ae0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81ae0, cond=0x563f0ba81b08) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a323d2aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81b08, mutex = 0x563f0ba81ae0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81b08, mutex=0x563f0ba81ae0) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a323d3700) at pthread_create.c:463
+        pd = 0x7f8a323d3700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231525086976, 6463725621038721813, 140231525084224, 0, 94828778507936, 140720405810864, -6438000881532490987, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 10 (Thread 0x7f8a32bd4700 (LWP 3533)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba819c8) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a32bd3aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba819a0, mutex = 0x563f0ba81978, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81978, cond=0x563f0ba819a0) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a32bd3aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba819a0, mutex = 0x563f0ba81978, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba819a0, mutex=0x563f0ba81978) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a32bd4700) at pthread_create.c:463
+        pd = 0x7f8a32bd4700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231533479680, 6463725621038721813, 140231533476928, 0, 94828778507360, 140720405810864, -6437999782557734123, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 9 (Thread 0x7f8a333d5700 (LWP 3532)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81860) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a333d4aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81838, mutex = 0x563f0ba81810, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81810, cond=0x563f0ba81838) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a333d4aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81838, mutex = 0x563f0ba81810, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81838, mutex=0x563f0ba81810) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a333d5700) at pthread_create.c:463
+        pd = 0x7f8a333d5700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231541872384, 6463725621038721813, 140231541869632, 0, 94828778919024, 140720405810864, -6437998685730460907, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 8 (Thread 0x7f8a33bd6700 (LWP 3531)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba816f8) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a33bd5aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba816d0, mutex = 0x563f0ba816a8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba816a8, cond=0x563f0ba816d0) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a33bd5aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba816d0, mutex = 0x563f0ba816a8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba816d0, mutex=0x563f0ba816a8) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a33bd6700) at pthread_create.c:463
+        pd = 0x7f8a33bd6700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231550265088, 6463725621038721813, 140231550262336, 0, 94828778483408, 140720405810864, -6437997586755704043, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 7 (Thread 0x7f8a343d7700 (LWP 3530)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81590) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a343d6aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81568, mutex = 0x563f0ba81540, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81540, cond=0x563f0ba81568) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a343d6aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81568, mutex = 0x563f0ba81540, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81568, mutex=0x563f0ba81540) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a343d7700) at pthread_create.c:463
+        pd = 0x7f8a343d7700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231558657792, 6463725621038721813, 140231558655040, 0, 94828778919232, 140720405810864, -6437987689540441323, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 6 (Thread 0x7f8a232ab700 (LWP 3529)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81428) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a232aaaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81400, mutex = 0x563f0ba813d8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba813d8, cond=0x563f0ba81400) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a232aaaa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81400, mutex = 0x563f0ba813d8, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81400, mutex=0x563f0ba813d8) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a232ab700) at pthread_create.c:463
+        pd = 0x7f8a232ab700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231272216320, 6463725621038721813, 140231272213568, 0, 94828778943088, 140720405810864, -6438033785276945643, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 5 (Thread 0x7f8a22aaa700 (LWP 3528)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba812c0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a22aa9aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81298, mutex = 0x563f0ba81270, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81270, cond=0x563f0ba81298) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a22aa9aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81298, mutex = 0x563f0ba81270, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81298, mutex=0x563f0ba81270) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a22aaa700) at pthread_create.c:463
+        pd = 0x7f8a22aaa700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231263823616, 6463725621038721813, 140231263820864, 0, 94828778482400, 140720405810864, -6438034886399186155, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 4 (Thread 0x7f8a222a9700 (LWP 3527)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba81158) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a222a8aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81130, mutex = 0x563f0ba81108, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba81108, cond=0x563f0ba81130) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a222a8aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba81130, mutex = 0x563f0ba81108, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba81130, mutex=0x563f0ba81108) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a222a9700) at pthread_create.c:463
+        pd = 0x7f8a222a9700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231255430912, 6463725621038721813, 140231255428160, 0, 94828778516768, 140720405810864, -6438035985373943019, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 3 (Thread 0x7f8a21aa8700 (LWP 3526)):
+#0  0x00007f8a4dcfd9f3 in futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x563f0ba80ff0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+        __ret = -512
+        oldtype = 0
+        err = <optimized out>
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a21aa7aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba80fc8, mutex = 0x563f0ba80fa0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#1  0x00007f8a4dcfd9f3 in __pthread_cond_wait_common (abstime=0x0, mutex=0x563f0ba80fa0, cond=0x563f0ba80fc8) at pthread_cond_wait.c:502
+        spin = 0
+        buffer = {__routine = 0x7f8a4dcfd690 <__condvar_cleanup_waiting>, __arg = 0x7f8a21aa7aa0, __canceltype = 110, __prev = 0x0}
+        cbuffer = {wseq = 0, cond = 0x563f0ba80fc8, mutex = 0x563f0ba80fa0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        signals = <optimized out>
+        result = 0
+        seq = 0
+#2  0x00007f8a4dcfd9f3 in __pthread_cond_wait (cond=0x563f0ba80fc8, mutex=0x563f0ba80fa0) at pthread_cond_wait.c:655
+#3  0x00007f8a34b77d5b in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#4  0x00007f8a34b77bd7 in  () at /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+#5  0x00007f8a4dcf76db in start_thread (arg=0x7f8a21aa8700) at pthread_create.c:463
+        pd = 0x7f8a21aa8700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231247038208, 6463725621038721813, 140231247035456, 0, 94828778482560, 140720405810864, -6438028294698128619, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#6  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 2 (Thread 0x7f8a41ce7700 (LWP 3507)):
+#0  0x00007f8a4dd006d6 in futex_abstimed_wait_cancelable (private=0, abstime=0x0, expected=0, futex_word=0x563f0b607130) at ../sysdeps/unix/sysv/linux/futex-internal.h:205
+        __ret = -512
+        oldtype = 2
+        err = <optimized out>
+#1  0x00007f8a4dd006d6 in do_futex_wait (sem=sem@entry=0x563f0b607130, abstime=0x0) at sem_waitcommon.c:111
+#2  0x00007f8a4dd007c8 in __new_sem_wait_slow (sem=0x563f0b607130, abstime=0x0) at sem_waitcommon.c:181
+        _buffer = {__routine = 0x7f8a4dd00690 <__sem_wait_cleanup>, __arg = 0x563f0b607130, __canceltype = 0, __prev = 0x0}
+        err = <optimized out>
+        d = 0
+#3  0x00007f8a4dfed2e2 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#4  0x00007f8a4dfed3fd in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#5  0x00007f8a4df7816a in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#6  0x00007f8a4df77d7c in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#7  0x00007f8a4dfecfa9 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#8  0x00007f8a4dcf76db in start_thread (arg=0x7f8a41ce7700) at pthread_create.c:463
+        pd = 0x7f8a41ce7700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140231786264320, 6463725621038721813, 140231786261568, 0, 94828773798144, 140720405814432, -6438098353667790059, -6438071957163431147}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007f8a4c1f988f in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 1 (Thread 0x7f8a4efe3ac0 (LWP 3506)):
+#0  0x00007f8a4dd0223a in __waitpid (pid=3542, stat_loc=0x563f09aedf6c, options=0) at ../sysdeps/unix/sysv/linux/waitpid.c:30
+        resultvar = 18446744073709551104
+        sc_cancel_oldtype = 0
+#1  0x0000563f0941846c in  ()
+#2  0x00007f8a4dd02890 in <signal handler called> () at /lib/x86_64-linux-gnu/libpthread.so.0
+#3  0x00007f8a3a8b1e00 in  ()
+#4  0x00007f8a4b6eae42 in XCloseDisplay () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#5  0x00007f8a4dfdcb82 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#6  0x00007f8a4dfb0686 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#7  0x00007f8a4df2e58a in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#8  0x0000563f0941ce06 in call_terms() ()
+#9  0x00007f8a4c11b041 in __run_exit_handlers (status=1, listp=0x7f8a4c4c3718 <__exit_funcs>, run_list_atexit=run_list_atexit@entry=true, run_dtors=run_dtors@entry=true) at exit.c:108
+        atfct = <optimized out>
+        onfct = <optimized out>
+        cxafct = <optimized out>
+        f = <optimized out>
+        new_exitfn_called = 3124
+        cur = 0x563f0b4c1570
+#10 0x00007f8a4c11b13a in __GI_exit (status=<optimized out>) at exit.c:139
+#11 0x00007f8a4be82512 in  () at /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0
+#12 0x00007f8a4b7108ba in _XError () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#13 0x00007f8a4b70d7eb in  () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#14 0x00007f8a4b70d895 in  () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#15 0x00007f8a4b70e1c5 in _XEventsQueued () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#16 0x00007f8a4b710f85 in _XGetRequest () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#17 0x00007f8a4b6ebc8a in XCreateColormap () at /usr/lib/x86_64-linux-gnu/libX11.so.6
+#18 0x00007f8a4dfdea33 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#19 0x00007f8a4dfae868 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#20 0x00007f8a4df5e419 in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#21 0x00007f8a4df5438e in  () at /usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+#22 0x0000563f0941f968 in SDLFB::ResetSDLRenderer() ()
+#23 0x0000563f0941fc92 in SDLFB::SDLFB(int, int, bool, SDL_Window*) ()
+#24 0x0000563f09420cc4 in SDLVideo::CreateFrameBuffer(int, int, bool, DFrameBuffer*) ()
+#25 0x0000563f095cf82e in V_DoModeSetup(int, int, int) ()
+#26 0x0000563f095cfc66 in V_Init2() ()
+#27 0x0000563f09454524 in D_DoomMain() ()
+#28 0x0000563f09400982 in main ()
